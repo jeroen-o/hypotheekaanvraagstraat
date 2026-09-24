@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/modernist-147b6d48-53bd-4a7b-b37e-74b8a6235979/styles.css">
+  <script src="_ds/modernist-147b6d48-53bd-4a7b-b37e-74b8a6235979/_ds_bundle.js"></script>
+  <title>De Hypotheekaanvraagstraat.nl – het proces</title>
+  <script src="data/klantteams.js"></script>
+  <script src="data/logos.js"></script>
+  <style>
+    :root { --color-accent: #f0533d; --color-accent-500: #f0533d; --color-accent-600: #d8412c; --color-accent-700: #a82b18; --color-text: #373737; --color-neutral-700: #575756; --color-neutral-800: #575756; --color-divider: color-mix(in srgb, #373737 35%, transparent); --asn-geel: #eed484; --asn-oranje: #ffa06a; --asn-lichtgroen: #a1d884; --asn-groen: #007a53; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; text-wrap: pretty; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); }
+    a { color: var(--asn-groen); text-underline-offset: 3px; }
+    a:hover { color: var(--color-accent); }
+    .nav a:hover { color: var(--color-accent); }
+    .btn, .tag, .nav-brand, .nav a { white-space: nowrap; text-wrap: nowrap; text-align: left; }
+    [data-m="voordeel"]:nth-child(4n+1) { border-top-color: var(--color-accent) !important; }
+    [data-m="voordeel"]:nth-child(4n+2) { border-top-color: var(--asn-geel) !important; }
+    [data-m="voordeel"]:nth-child(4n+3) { border-top-color: var(--asn-oranje) !important; }
+    [data-m="voordeel"]:nth-child(4n+4) { border-top-color: var(--asn-groen) !important; }
+    @keyframes rij-links { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @keyframes rij-rechts { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+    [data-m="rij"] { display: flex; width: max-content; animation: rij-links var(--duur, 60s) linear infinite; }
+    [data-m="rij"][data-dir="r"] { animation-name: rij-rechts; }
+    [data-m="carrousel"]:hover [data-m="rij"] { animation-play-state: paused; }
+    @media (prefers-reduced-motion: reduce) { [data-m="rij"] { animation: none; } }
+    [data-m="link"]:hover { background: color-mix(in srgb, var(--color-accent) 6%, transparent); }
+    @media (max-width: 880px) {
+      [data-m="nav"] { flex-wrap: wrap; row-gap: 10px; padding-block: 14px !important; }
+      [data-m="nav"] a:not(.nav-brand) { font-size: 13px; }
+      [data-m="nav"] .btn { margin-left: auto; }
+      [data-m="sec"] { padding: 48px 0 40px !important; }
+      [data-m="stap"] { grid-template-columns: minmax(0,1fr) !important; gap: 4px !important; }
+      [data-m="straat"] { grid-template-columns: repeat(3,minmax(0,1fr)) !important; }
+    }
+    @media (max-width: 480px) { [data-m="straat"] { grid-template-columns: repeat(2,minmax(0,1fr)) !important; } }
+    @media (max-width: 560px) {
+      [data-m="nav"] a:not(.nav-brand) { display: none; }
+      [data-m="nav"] .nav-brand { flex: 1; }
+      [data-m="acties"] .btn { width: 100%; }
+    }
+  </style>
+</helmet>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#f0533d"></rect><text x="30" y="72" font-family="Archivo, Arial, sans-serif" font-weight="800" font-size="56" fill="#f3f2f2">H</text></svg></template>
+
+<nav class="nav" data-m="nav" style="padding-inline: max(clamp(20px,5vw,72px), calc((100% - 1200px) / 2 + clamp(20px,5vw,72px)))">
+  <a href="#top" class="nav-brand" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--color-text);font-size:18px"><span style="display:flex;width:32px;height:32px;flex:none;background:var(--color-accent);color:var(--color-bg);font-family:var(--font-heading);font-weight:800;font-size:27px;line-height:0.8;padding:3px 4px;box-sizing:border-box">H</span>Hypotheekaanvraagstraat.nl</a>
+  <a href="#proces">Het proces</a>
+  <a href="#waarom">Waarom</a>
+  <a href="#kortom">Kortom</a>
+  <a href="#contact">Contact</a>
+  <a href="#proces" class="btn btn-primary" style="justify-content:flex-start;color:var(--color-bg);text-decoration:none">Bekijk de stappen</a>
+</nav>
+
+<div id="top" style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+
+  <section data-screen-label="Hero" data-m="sec" style="padding:72px 0 64px">
+    <span style="display:block;font-size:13px;line-height:14px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 14px">Het proces</span>
+    <h1 style="font-family:var(--font-heading);font-weight:800;font-size:clamp(38px,5.6vw,76px);line-height:1.04;letter-spacing:-0.02em;margin:0 0 0 -0.05em"><span style="display:block">Van adviesgesprek</span><span style="display:block;color:var(--color-accent)">tot sleuteloverdracht.</span></h1>
+    <p style="font-size:17px;line-height:28px;max-width:56ch;margin:28px 0 0">Vanaf het moment dat u een adviesgesprek heeft gehad tot de sleuteloverdracht doorloopt u een aantal vaste stappen. De Hypotheekaanvraagstraat digitaliseert en bewaakt dat hele traject.</p>
+    <div data-m="acties" style="display:flex;gap:var(--space-3);flex-wrap:wrap;margin-top:28px">
+      <a href="#proces" class="btn btn-primary" style="color:var(--color-bg);text-decoration:none">Bekijk de zes stappen</a>
+      <a href="#waarom" class="btn btn-secondary" style="color:var(--color-text);text-decoration:none">Waarom dit belangrijk is</a>
+    </div>
+
+    <sc-if value="{{ toonStraat }}" hint-placeholder-val="{{ true }}">
+      <div data-m="straat" style="display:grid;grid-template-columns:repeat(6,minmax(0,1fr));margin-top:64px;border-top:2px solid var(--color-divider);border-bottom:2px solid var(--color-divider)">
+        <sc-for list="{{ stappen }}" as="s" hint-placeholder-count="6">
+          <a href="#stap-{{ s.num }}" data-m="link" style="display:flex;flex-direction:column;gap:10px;padding:16px 14px 18px;border-left:2px solid var(--color-divider);text-decoration:none;color:var(--color-text)">
+            <span style="font-family:var(--font-heading);font-weight:800;font-size:15px;font-feature-settings:'tnum' 1;color:var(--color-accent)">{{ s.num }}</span>
+            <span style="font-family:var(--font-heading);font-weight:800;font-size:15px;line-height:20px">{{ s.kort }}</span>
+          </a>
+        </sc-for>
+      </div>
+    </sc-if>
+  </section>
+
+  <hr style="height:2px;border:0;margin:0;background:var(--color-divider)">
+
+  <section id="proces" data-screen-label="Proces" data-m="sec" style="padding:72px 0 84px;scroll-margin-top:24px">
+    <span style="display:block;font-size:13px;line-height:14px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 14px">Zes vaste stappen</span>
+    <h2 style="font-size:clamp(28px,3.2vw,40px);line-height:1.1;letter-spacing:-0.015em;margin:0 0 36px;max-width:24ch">Eén digitale straat, van advies tot notaris.</h2>
+    <sc-for list="{{ stappen }}" as="s" hint-placeholder-count="6">
+      <div id="stap-{{ s.num }}" data-m="stap" style="display:grid;grid-template-columns:minmax(64px,120px) minmax(0,300px) minmax(0,1fr);gap:14px clamp(24px,4vw,56px);align-items:baseline;padding:20px 0;border-top:2px solid var(--color-divider);scroll-margin-top:24px">
+        <span style="font-family:var(--font-heading);font-weight:800;font-size:15px;font-feature-settings:'tnum' 1;color:var(--color-accent)">{{ s.num }}</span>
+        <h3 style="font-size:20px;line-height:28px;margin:0">{{ s.naam }}</h3>
+        <p style="font-size:15px;line-height:26px;margin:0;color:var(--color-neutral-800);max-width:56ch">{{ s.copy }}</p>
+      </div>
+    </sc-for>
+    <hr style="height:2px;border:0;margin:0;background:var(--color-divider)">
+  </section>
+
+  <section id="waarom" data-screen-label="Waarom" data-m="sec" style="padding:0 0 84px;scroll-margin-top:24px">
+    <span style="display:block;font-size:13px;line-height:14px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 14px">Voor u als consument</span>
+    <h2 style="font-size:clamp(28px,3.2vw,40px);line-height:1.1;letter-spacing:-0.015em;margin:0 0 36px;max-width:24ch">Waarom dit belangrijk is.</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 clamp(24px,4vw,56px)">
+      <sc-for list="{{ voordelen }}" as="b" hint-placeholder-count="5">
+        <div data-m="voordeel" style="border-top:6px solid var(--color-divider);padding:20px 0 32px">
+          <h3 style="font-size:20px;line-height:28px;margin:0 0 8px">{{ b.naam }}</h3>
+          <p style="font-size:15px;line-height:26px;margin:0;color:var(--color-neutral-800);max-width:48ch">{{ b.copy }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section data-screen-label="Veiligheid" style="padding:0 0 72px">
+    <div style="background:var(--asn-lichtgroen);padding:28px clamp(20px,3vw,36px);display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px 36px;font-size:13.5px;line-height:22px">
+      <div><p style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;margin:0 0 4px;color:var(--color-text)">Uitwisseling</p><p style="margin:0;font-weight:600">Via HDN</p></div>
+      <div><p style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;margin:0 0 4px;color:var(--color-text)">Privacy</p><p style="margin:0;font-weight:600">AVG</p></div>
+      <div><p style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;margin:0 0 4px;color:var(--color-text)">Zorgplicht</p><p style="margin:0;font-weight:600">Wft</p></div>
+      <div><p style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;margin:0 0 4px;color:var(--color-text)">Documenten</p><p style="margin:0;font-weight:600">Beveiligde omgeving, geen losse e-mail</p></div>
+    </div>
+  </section>
+
+  <hr style="height:2px;border:0;margin:0;background:var(--color-divider)">
+
+  <section id="contact" data-screen-label="Contact zoeker" data-m="sec" style="padding:72px 0 84px;scroll-margin-top:24px">
+    <span style="display:block;font-size:13px;line-height:14px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 14px">Contact</span>
+    <h2 style="font-size:clamp(28px,3.2vw,40px);line-height:1.1;letter-spacing:-0.015em;margin:0 0 14px;max-width:24ch">Heeft u vragen over uw dossier? Neem contact op met:</h2>
+    <p style="font-size:17px;line-height:28px;max-width:56ch;margin:0 0 28px">Zoek het klantteam dat uw dossier behandelt. Vul uw woonplaats, postcode of de naam van uw kantoor in.</p>
+    <div class="field" style="max-width:560px;margin:0 0 8px">
+      <label for="zoek">Woonplaats, postcode of kantoor</label>
+      <input id="zoek" class="input" type="search" autocomplete="off" placeholder="Bijv. Utrecht of 3521" value="{{ q }}" onChange="{{ onQ }}">
+    </div>
+    <p style="font-size:13px;line-height:20px;margin:0 0 28px;color:var(--color-neutral-700)">{{ status }}</p>
+
+    <sc-if value="{{ heeftResultaten }}" hint-placeholder-val="{{ false }}">
+      <div style="border-top:2px solid var(--color-divider)">
+        <sc-for list="{{ resultaten }}" as="r" hint-placeholder-count="3">
+          <div data-m="stap" style="display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr);gap:10px clamp(24px,4vw,56px);align-items:start;padding:18px 0;border-bottom:2px solid var(--color-divider)">
+            <div>
+              <span style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:0 0 4px"><span style="font-family:var(--font-heading);font-weight:800;font-size:17px">Klantteam {{ r.team }}</span><sc-if value="{{ r.hoofd }}" hint-placeholder-val="{{ false }}"><span class="tag" style="background:var(--asn-groen);color:#fff">Hoofdvestiging</span></sc-if><sc-if value="{{ r.afstandLabel }}" hint-placeholder-val="{{ false }}"><span class="tag tag-neutral">{{ r.afstandLabel }}</span></sc-if></span>
+              <span style="display:block;font-size:14px;line-height:22px;color:var(--color-neutral-800)">{{ r.straat }}<br>{{ r.postcode }} {{ r.plaats }}</span>
+            </div>
+            <div>
+              <p style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;margin:0 0 4px;color:var(--color-neutral-700)">Telefoon</p>
+              <a href="{{ r.telHref }}" style="font-weight:600;font-size:15px;font-feature-settings:'tnum' 1">{{ r.tel }}</a>
+            </div>
+            <div>
+              <p style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;margin:0 0 4px;color:var(--color-neutral-700)">E-mail</p>
+              <a href="{{ r.mailto }}" style="font-weight:600;font-size:15px;word-break:break-all">{{ r.email }}</a>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </sc-if>
+  </section>
+</div>
+
+<section id="geldverstrekkers" data-screen-label="Geldverstrekkers" style="background:var(--asn-geel);padding:72px 0 80px;overflow:hidden">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px) 36px">
+    <span style="display:block;font-size:13px;line-height:14px;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;color:var(--color-text);margin:0 0 14px">Geldverstrekkers</span>
+    <h2 style="font-size:clamp(28px,3.2vw,40px);line-height:1.1;letter-spacing:-0.015em;margin:0;max-width:24ch">Eén straat, verbonden met {{ aantalLogos }} geldverstrekkers.</h2>
+  </div>
+  <div data-m="carrousel" style="display:flex;flex-direction:column;gap:2px;border-top:2px solid var(--color-text);border-bottom:2px solid var(--color-text);background:var(--color-text)">
+    <div style="overflow:hidden">
+      <div data-m="rij" style="--duur:{{ duurA }}">
+        <sc-for list="{{ rijA }}" as="l" hint-placeholder-count="10">
+          <div style="flex:none;width:200px;height:104px;margin-right:2px;background:#fff;display:flex;align-items:center;justify-content:center;padding:18px 24px;box-sizing:border-box"><img src="{{ l.src }}" alt="{{ l.naam }}" loading="lazy" style="max-width:100%;max-height:100%;object-fit:contain;transform:{{ l.rot }}"></div>
+        </sc-for>
+      </div>
+    </div>
+    <div style="overflow:hidden">
+      <div data-m="rij" data-dir="r" style="--duur:{{ duurB }}">
+        <sc-for list="{{ rijB }}" as="l" hint-placeholder-count="10">
+          <div style="flex:none;width:200px;height:104px;margin-right:2px;background:#fff;display:flex;align-items:center;justify-content:center;padding:18px 24px;box-sizing:border-box"><img src="{{ l.src }}" alt="{{ l.naam }}" loading="lazy" style="max-width:100%;max-height:100%;object-fit:contain;transform:{{ l.rot }}"></div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+
+<sc-if value="{{ kortomRood }}" hint-placeholder-val="{{ true }}">
+  <section id="kortom" data-screen-label="Kortom" style="background:var(--color-accent);color:var(--color-bg)">
+    <div style="max-width:1200px;margin:0 auto;padding:96px clamp(20px,5vw,72px) 104px">
+      <span style="display:block;font-size:13px;line-height:14px;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;margin:0 0 20px">Kortom</span>
+      <p style="font-family:var(--font-heading);font-weight:800;font-size:clamp(30px,4.2vw,56px);line-height:1.08;letter-spacing:-0.02em;margin:0;max-width:22ch">Geen extra laag bureaucratie — juist het middel dat uw aanvraag betrouwbaarder, sneller en transparanter maakt.</p>
+      <p style="font-size:clamp(20px,1.8vw,24px);line-height:1.4;margin:28px 0 0;max-width:40ch;font-weight:600">Met minder kans op vertraging vlak voor het passeren bij de notaris.</p>
+    </div>
+  </section>
+</sc-if>
+<sc-if value="{{ kortomRustig }}" hint-placeholder-val="{{ false }}">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+    <hr style="height:2px;border:0;margin:0;background:var(--color-divider)">
+    <section id="kortom" data-screen-label="Kortom" data-m="sec" style="padding:72px 0 84px">
+      <span style="display:block;font-size:13px;line-height:14px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 14px">Kortom</span>
+      <p style="font-family:var(--font-heading);font-weight:800;font-size:clamp(28px,3.2vw,40px);line-height:1.1;letter-spacing:-0.015em;margin:0;max-width:26ch">Geen extra laag bureaucratie — juist het middel dat uw aanvraag <span style="color:var(--color-accent)">betrouwbaarder, sneller en transparanter</span> maakt.</p>
+      <p style="font-size:17px;line-height:28px;margin:20px 0 0;max-width:56ch">Met minder kans op vertraging vlak voor het passeren bij de notaris.</p>
+    </section>
+  </div>
+</sc-if>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+  <footer style="padding:42px 0 56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px;font-size:13px;line-height:22px;color:var(--color-neutral-700)">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin:0 0 10px"><span style="display:flex;width:36px;height:36px;flex:none;background:var(--color-accent);color:var(--color-bg);font-family:var(--font-heading);font-weight:800;font-size:31px;line-height:0.8;padding:4px 4px;box-sizing:border-box">H</span><span style="font-family:var(--font-heading);font-weight:800;font-size:15px;color:var(--color-text)">Hypotheekaanvraagstraat.nl</span></div>
+      <p style="margin:0">Uw hypotheekaanvraag, digitaal en bewaakt.</p>
+    </div>
+    <div>
+      <p style="font-family:var(--font-heading);font-weight:800;font-size:15px;color:var(--color-text);margin:0 0 8px">Op deze pagina</p>
+      <p style="margin:0;display:flex;flex-direction:column;gap:2px"><a href="#proces" style="color:inherit">Het proces</a><a href="#waarom" style="color:inherit">Waarom dit belangrijk is</a><a href="#kortom" style="color:inherit">Kortom</a><a href="#contact" style="color:inherit">Contact over uw dossier</a></p>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;toonStraat&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;carrouselTempo&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:1,&quot;max&quot;:8,&quot;step&quot;:0.5,&quot;unit&quot;:&quot;s per logo&quot;,&quot;default&quot;:3,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Geldverstrekkers&quot;},&quot;afsluiting&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Rood vlak&quot;,&quot;Rustig&quot;],&quot;default&quot;:&quot;Rood vlak&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Afsluiting&quot;}}">
+class Component extends DCLogic {
+  state = { q: '', teams: null };
+  componentDidMount() {
+    const load = () => window.KLANTTEAMS ? this.setState({ teams: window.KLANTTEAMS }) : setTimeout(load, 100);
+    load();
+  }
+  zoek() {
+    const T = this.state.teams, raw = this.state.q.trim();
+    if (!T) return { lijst: [], status: 'Kantoren laden…' };
+    const all = T.flatMap(t => t.vestigingen.map(v => ({ ...v, team: t.team, tel: t.tel || '070 356 9335' })));
+    if (!raw) return { lijst: [], status: `${all.length} kantoren · ${T.length} klantteams` };
+    const norm = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]/g, '');
+    const q = norm(raw), pc = raw.match(/^\s*(\d{4})/);
+    let lijst;
+    if (pc) {
+      const n = +pc[1];
+      lijst = all.map(v => ({ ...v, d: Math.abs(+v.postcode.slice(0, 4) - n) })).sort((a, b) => a.d - b.d).slice(0, 5)
+        .map((v, i) => ({ ...v, afstandLabel: v.d === 0 ? 'Uw postcodegebied' : i === 0 ? 'Dichtstbij' : '' }));
+      return { lijst, status: `Kantoren het dichtst bij postcode ${pc[1]}` };
+    }
+    const score = v => norm(v.plaats).startsWith(q) ? 0 : norm(v.team).startsWith(q) ? 1 : (norm(v.plaats) + norm(v.team) + norm(v.straat)).includes(q) ? 2 : 9;
+    lijst = all.map(v => ({ ...v, s: score(v) })).filter(v => v.s < 9).sort((a, b) => a.s - b.s).slice(0, 8);
+    const teamHits = new Set(lijst.filter(v => v.s === 1).map(v => v.team));
+    if (teamHits.size) lijst = all.filter(v => teamHits.has(v.team)).concat(lijst.filter(v => !teamHits.has(v.team))).slice(0, 8);
+    return { lijst, status: lijst.length ? `${lijst.length} ${lijst.length === 1 ? 'kantoor' : 'kantoren'} gevonden` : `Geen kantoor gevonden voor “${raw}”. Probeer uw postcode — dan tonen we het dichtstbijzijnde klantteam.` };
+  }
+  renderVals() {
+    const { lijst, status } = this.zoek();
+    const resultaten = lijst.map(v => ({ ...v, afstandLabel: v.afstandLabel || '', telHref: 'tel:+31' + v.tel.replace(/\s/g, '').replace(/^0/, ''), mailto: 'mailto:' + v.email + '?subject=' + encodeURIComponent('Vraag over mijn hypotheekdossier') }));
+    const zoeker = { q: this.state.q, onQ: e => this.setState({ q: e.target.value }), status, resultaten, heeftResultaten: resultaten.length > 0 };
+    const stappen = [
+      ['Adviesvastlegging', 'Advies', 'Uw adviseur legt uw wensen, situatie en het geadviseerde hypotheekproduct vast.'],
+      ['Documenten aanleveren', 'Documenten', 'U uploadt via een beveiligde omgeving de benodigde stukken: loonstroken, werkgeversverklaring, koopovereenkomst, ID en meer.'],
+      ['Aanvraag indienen bij de geldverstrekker', 'Indienen', 'De aanvraag en documenten worden via HDN (Hypotheken Data Netwerk) digitaal doorgestuurd naar de bank of verzekeraar.'],
+      ['Voortgang & status', 'Voortgang', 'U en uw adviseur zien in één omgeving in welke fase de aanvraag zit: in behandeling, akkoord onder voorwaarden, offerte.'],
+      ['Offerte en ondertekening', 'Offerte', 'De hypotheekofferte wordt gegenereerd en digitaal (of fysiek) ondertekend.'],
+      ['Notaris & passeren', 'Notaris', 'De laatste stukken gaan naar de notaris voor de overdracht.'],
+    ].map(([naam, kort, copy], i) => ({ naam, kort, copy, num: String(i + 1).padStart(2, '0') }));
+    const voordelen = [
+      ['Overzicht en rust', 'U hoeft niet te bellen of mailen om te weten waar uw aanvraag staat — u ziet het zelf, live.'],
+      ['Sneller proces', 'Geen stapels papier of dubbele invoer. Documenten gaan direct en foutloos naar de juiste partij, wat vertraging en fouten voorkomt.'],
+      ['Veiligheid', 'Gevoelige financiële en persoonsgegevens gaan via een beveiligd platform in plaats van los per e-mail — belangrijk vanuit privacy (AVG) en Wft-zorgplicht.'],
+      ['Minder fouten, minder stress', 'Het systeem controleert of alle vereiste stukken compleet zijn vóór verzending. Zo voorkomt u vertraging door onvolledige dossiers — cruciaal met een aankooptermijn tegen een deadline.'],
+      ['Eén aanspreekpunt', 'Uw adviseur en de geldverstrekker werken in dezelfde digitale straat, dus u krijgt geen tegenstrijdige informatie.'],
+    ].map(([naam, copy]) => ({ naam, copy }));
+    const rood = (this.props.afsluiting ?? 'Rood vlak') === 'Rood vlak';
+    const L = [['socio.png','Socio Hypotheek'],['handelsbanken.png','Handelsbanken'],['lloyds.png','Lloyds Bank'],['centraal-beheer.png','Centraal Beheer'],['argenta.png','Argenta'],['van-lanschot.png','Van Lanschot Kempen'],['allianz.png','Allianz'],['jens.png','Jens Hypotheken'],['groene-hart.webp','Groene Hart Hypotheken'],['clarian.png','Clarian Wonen'],['de-nederlandse.png','De Nederlandse'],['iqwoon.jpg','IQWOON'],['impact.jpeg','Impact Hypotheken'],['orange-credit.jpg','Orange Credit'],['merius.png','Merius'],['solidbriq.jpeg','Solidbriq'],['munt.png','MUNT Hypotheken'],['abn-amro.png','ABN AMRO'],['robuust.png','Robuust'],['syntrus.png','Syntrus Achmea'],['venn.png','Venn Hypotheken'],['nn.png','Nationale-Nederlanden'],['attens.png','Attens Hypotheken'],['asr.png','a.s.r.'],['tulp.png','Tulp Hypotheken'],['bunq.png','bunq'],['bijbouwe.png','bijBouwe'],['nibc.png','NIBC'],['obvion.png','Obvion'],['asn.png','ASN Bank'],['knab.png','Knab'],['triodos.png','Triodos Bank'],['florius.png','Florius'],['vista.png','Vista Hypotheken'],['ing.png','ING'],['lot.png','LOT Hypotheken'],['hollandwoont.jpg','Holland Woont'],['build.png','Build Finance'],['rabobank.webp','Rabobank']]
+      .map(([f, naam]) => ({ src: (window.LOGOS && window.LOGOS[f]) || 'logos/' + f, naam, rot: f === 'vista.png' ? 'rotate(180deg)' : 'none' }));
+    const A = L.filter((_, i) => i % 2 === 0), B = L.filter((_, i) => i % 2 === 1);
+    const tempo = this.props.carrouselTempo ?? 3;
+    return { ...zoeker, aantalLogos: L.length, rijA: [...A, ...A], rijB: [...B, ...B], duurA: A.length * tempo + 's', duurB: B.length * tempo + 's', stappen, voordelen, toonStraat: this.props.toonStraat ?? true, kortomRood: rood, kortomRustig: !rood };
+  }
+}
+</script>
+</body>
+</html>
